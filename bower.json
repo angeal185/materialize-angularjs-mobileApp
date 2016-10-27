@@ -1,0 +1,26 @@
+{
+  "name": "bower",
+  "authors": [
+    "angeal185 <beneaves01@hotmail.com>"
+  ],
+  "description": "Mobile angular app",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://angeal185.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mdi": "^1.7.22",
+    "jquery": "^3.1.1",
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "materialize": "^0.97.7",
+    "stylus": "^0.54.5"
+  }
+}

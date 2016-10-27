@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title></title>
+<meta content="IE=edge" http-equiv="x-ua-compatible">
+<meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href="assets/css/materialdesignicons.css" rel="stylesheet" type="text/css">
+<link href="assets/css/materialize.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/keyframes.css" rel="stylesheet" type="text/css">
+<link href="assets/css/swipebox.css" rel="stylesheet" >
+<link href="assets/css/prism.css" rel="stylesheet" >
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+<script src="assets/js/jquery-2.1.0.min.js"></script>
+<script src="assets/js/angular.js"></script>
+<script src="assets/js/angular-rout.js"></script>
+<script src="assets/js/rout.js"></script>
+<script src="assets/js/materialize.min.js"></script> 
+<script src="assets/js/snap.js"></script> 
+<script src="assets/js/sidebar.js"></script>	
+<script src="assets/js/jquery.swipebox.js"></script>
+<script src="assets/js/prism.js"></script>			
+<script src="assets/js/functions.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="m-scene" id="main">
+<div class="snap-drawers">
+<ng-include src="'assets/partials/leftSB.html'"></ng-include>
+<ng-include src="'assets/partials/rightSB.html'"></ng-include>
+</div>
+<div class="snap-content z-depth-5" id="content">
+<div id="toolbar">
+  <div class="open-left" id="open-left">
+	<i class="mdi mdi-sort-variant"></i>
+  </div>
+  <span class="title">angularTemplate</span>
+  <div class="open-right" id="open-right">
+	<i class="mdi mdi-dots-vertical"></i>
+</div>
+<div ng-view class="scene_element scene_element--fadeinup"></div>
+<div id="blockui"></div>
+</div>
+</div>
+</body>
+</html>
